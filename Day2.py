@@ -27,4 +27,3 @@ for ID_num, ID in enumerate(ID_list):
 
             print("Difference of 1 letter found in IDs {} and {}".format(ID, nextID))
             print("Difference occurs at index {} with letters {} and {}".format(diff_index, ID[diff_index], nextID[diff_index]))
-            

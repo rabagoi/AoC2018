@@ -1,7 +1,7 @@
 # Advent of Code: Day 1
 # Frequency Calibration
 
-# Part 1: Given an input of frequency drifts, what is the resulting frequency from a starting frequency of zero?
+# Part 1: Sum of frequency drifts
 with open("day1input.txt", 'r') as data:
     print("Resulting Frequency:", sum([int(line.rstrip('\n')) for line in data]))
 
@@ -10,7 +10,7 @@ print("Resulting Frequency:", sum([int(line.rstrip('\n')) for line in open("day1
 
 
 
-# Part 2: The series of frequency drifts repeats. Which frequency is the first to repeat twice?
+# Part 2: First frequency that repeats
 freq_drifts = [int(line.rstrip('\n')) for line in open("day1input.txt", 'r')]
 freq_total = [sum(freq_drifts[0:i+1]) for i in range(len(freq_drifts))]
 drift = sum(freq_drifts)
